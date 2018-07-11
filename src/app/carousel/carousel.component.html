@@ -1,0 +1,36 @@
+<div class="slideshow-container">
+  <div class="mySlides fade-bullet">
+    <div class="mobile-serach">
+      <strong>Plan en boek</strong>
+      <input type="search" placeholder="Stel uw vraag" class="search" />
+    </div>
+    <div class="current-offer visibility-hidden">
+      <div class="city">{{current.title}}</div>
+      <div>
+        <span class="subcity">Retour vanaf</span>
+        <span class="currency">EUR</span>
+        <span class="price">1179</span>
+        <span class="arrow">></span>
+      </div>
+      <div class="notes">
+        <ul>
+          <li>Plus € 10 boekingskosten </li>
+          <li>v.a. Amsterdam, Schiphol (AMS)</li>
+        </ul>
+      </div>
+    </div>
+    <img *ngIf="current.url" src="../assets{{current.url}}" class="carousel-image">
+    <div class="placeholder">
+        <search-flight></search-flight>
+    </div>
+  </div>
+
+  <div class="controls" [style.visibility]="isVisible">
+    <a class="prev" (click)="prevSlide()">&#10094;</a>
+    <a class="next" (click)="nextSlide()">&#10095;</a>
+
+    <p class="bullet">
+      <span class="dot" [ngClass]="{'active': slideIndex === i+1}" (click)="currentSlide(i)" *ngFor="let item of slidesData; let i = index"></span>
+    </p>
+  </div>
+</div>

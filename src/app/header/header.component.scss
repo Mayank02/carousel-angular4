@@ -1,0 +1,150 @@
+.brand {
+  background: url("../../assets/img/logo.png");
+  width: 325px;
+  height: 75px;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.sub-menu {
+  padding: 20px;
+  float: right;
+  color: #00a1de;
+  .search {
+    background: url(../../assets/img/search.png) no-repeat 5px 4px;
+    margin: 10px 5px;
+    border-radius: 3px;
+    border: 1px solid #00a1de;
+    padding: 5px 0px 5px 27px;
+    float: right;
+    width: 155px;
+  }
+}
+
+.sub-menu-links {
+  span {
+    margin: 5px;
+  }
+  .user {
+    background: url(../../assets/img/user_icon.png) no-repeat center center;
+    height: 14px;
+    width: 14px;
+    display: inline-block;
+    margin: 0;
+  }
+  .flag {
+    background: url(../../assets/img/flag_nl.png) no-repeat center center;
+    height: 14px;
+    width: 14px;
+    display: inline-block;
+    margin: 0;
+  }
+}
+
+nav {
+  height: 35px;
+  border-top: 1px;
+  border-top-color: #00a1de;
+  border-top-style: solid;
+  margin: 0px 25px 10px 25px;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+
+.show-menu {
+  text-decoration: none;
+  color: #fff;
+  background: #00a1de;
+  text-align: center;
+  padding: 10px 0;
+  display: none;
+}
+
+/*Hide checkbox*/
+
+input[type=checkbox] {
+  display: none;
+  -webkit-appearance: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+
+input[type=checkbox]:checked~#menu {
+  display: block;
+}
+
+/*Responsive Styles*/
+
+/* Small Devices, Mobile */
+
+@media screen and (max-width: 468px) {
+  .visibility-hidden {
+    display: none;
+  }
+  .show-menu {
+    margin: 20px 6px;
+  }
+  .brand {
+    background: url("../../assets/img/logo_mobile.png");
+    width: 110px;
+    height: 75px;
+    display: inline-block;
+    margin-left: 10px;
+  }
+  header {
+    display: inline;
+  }
+  nav {
+    border: 0;
+    display: inline;
+    .user {
+      background: url(../../assets/img/user_icon.png) no-repeat center center;
+      height: 18px;
+      width: 14px;
+      border: 1px solid #00a1de;
+    }
+    .flag {
+      background: url(../../assets/img/flag_nl.png) no-repeat center center;
+      height: 18px;
+      width: 14px;
+      border: 1px solid #00a1de;
+    }
+  }
+  /*Make dropdown links appear inline*/
+  ul#menu {
+    position: static;
+    display: none;
+    background-color: #fff;
+    z-index: 10;
+    margin: 0px 23px 10px 0px;
+  }
+  /*Create vertical spacing*/
+  #menu li {
+    padding: 0px 10px;
+    border: 1px dashed #8a8a8a;
+  }
+  /*Make all menu links full width*/
+  ul li,
+  li a {
+    width: 100%;
+  }
+  /*Display 'show menu' link*/
+  .show-menu {
+    display: block;
+    float: right;
+    padding: 10px;
+    margin: 25px 10px;
+  }
+}
+
+/* Small Devices, Tablets, IPAD */
+
+@media only screen and (min-width: 768px) {}
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {
+  .search-content {
+    width: 400px;
+  }
+}

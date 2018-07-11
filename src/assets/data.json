@@ -1,0 +1,27 @@
+[
+    {
+      "id": "1",
+      "title": "India.",
+      "url": "../../assets/carousel/home1.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Amsterdam",
+      "url": "../../assets/carousel/home2.jpg"
+    },
+    {
+      "id": "3",
+      "title": "London",
+      "url": "../../assets/carousel/home3.jpg"
+    },
+    {
+      "id": "4",
+      "title": "Shri Lanka",
+      "url": "../../assets/carousel/home4.jpg"
+    },
+    {
+      "id": "5",
+      "title": "USA",
+      "url": "../../assets/carousel/home5.jpg"
+    }
+   ]

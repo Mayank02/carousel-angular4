@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../../assets/fonts/open-sans/OpenSans-Regular.eot');
+  /* IE9 Compat Modes */
+  src: url('../../assets/fonts/open-sans/OpenSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../../assets/fonts/open-sans/OpenSans-Regular.woff') format('woff'), /* Modern Browsers */
+  url('../../assets/fonts/open-sans/OpenSans-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../../assets/fonts/open-sans/OpenSans-Regular.svg#svgFontName') format('svg');
+  /* Legacy iOS */
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'OpenSans', sans-serif;
+}
+
+/*Strip the ul of padding and list styling*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+/*Create a horizontal list with spacing*/
+
+li {
+  display: inline-block;
+  float: left;
+}
+
+/*Style for menu links*/
+
+li a {
+  display: block;
+  height: 45px;
+  line-height: 45px;
+  color: #00a1de;
+  text-decoration: none;
+  padding: 0 10px 0 10px;
+  font-size: 14px;
+}
+
+/*Hover state for top level links*/
+
+li:hover a {
+  background: #00a1de;
+  color: #ffffff;
+}
+
+/*Style for dropdown links*/
+
+li:hover ul a {
+  background: #f3f3f3;
+  color: #2f3036;
+  height: 40px;
+  line-height: 40px;
+}
+
+/*Hover state for dropdown links*/
+
+li:hover ul a:hover {
+  background: #19c589;
+  color: #fff;
+}
+
+/*Hide dropdown links until they are needed*/
+
+li ul {
+  display: none;
+}
+
+/*Make dropdown links vertical*/
+
+li ul li {
+  display: block;
+  float: none;
+}
+
+/*Prevent text wrapping*/
+
+li ul li a {
+  width: auto;
+  min-width: 100px;
+  padding: 0 20px;
+}
+
+/*Display the dropdown on hover*/
+
+ul li a:hover+.hidden,
+.hidden:hover {
+  display: block;
+}

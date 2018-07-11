@@ -1,0 +1,80 @@
+.search-content {
+  background-color: #ffffff;
+  width: 350px;
+  color: #00a1de;
+  padding: 20px 0px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px 1px #8a8a8a;
+  .row {
+    height: 40px;
+    display: flex;
+    border-top: 1px solid #8a8a8a;
+    .lable {
+      width: 30%;
+      padding: 10px 20px;
+      font-weight: bold;
+    }
+    .form-control {
+      width: 70%;
+      padding: 5px 20px;
+      .date-picker {
+        padding: 4px 0px;
+      }
+    }
+    h3 {
+      margin: 0px 10px 10px 10px;
+    }
+    .link {
+      width: 50%;
+      padding: 10px 20px;
+      a {
+        color: #00a1de;
+      }
+    }
+    .button {
+      width: 50%;
+      padding: 10px 20px;
+      input {
+        color: #fff;
+        background: #e77b2f;
+      }
+    }
+    input,
+    select {
+      width: 100%;
+      border: 1px solid #00a1de;
+      border-radius: 3px;
+      padding: 5px;
+      color: #00a1de;
+    }
+  }
+  .row.active {
+    background-color: #00a1de;
+    color: #ffffff;
+    box-shadow: 1px 1px 5px 1px #8a8a8a;
+  }
+  .no-border {
+    border: none;
+  }
+}
+
+/* Small Devices, Mobile */
+
+@media screen and (max-width: 468px) {
+  .search-content {
+    display: none;
+  }
+}
+
+/* Small Devices, Tablets, IPAD */
+
+@media only screen and (min-width: 768px) {
+ }
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {
+  .search-content {
+    width: 400px;
+  }
+}
